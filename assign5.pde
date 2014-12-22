@@ -302,7 +302,7 @@ void printText(int status){
       case start:
         textSize(60);
         fill(95, 194, 226);
-        text("GALIXIAN", width/2, 240);
+        text("Arkanoid", width/2, 240);
         textSize(20);
         text("Press ENTER to Start", width/2, 280); // replace this with printText
         break;
