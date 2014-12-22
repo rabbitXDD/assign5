@@ -350,7 +350,7 @@ void reset() {
   bumpCount = 0;
   ball.x = mouseX;
   ball.y = height - 26;
-
+  shoot = false;
   /*--------Init Variable Here---------*/
   life = 3;
   bar.Length = 100;
