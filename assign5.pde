@@ -187,49 +187,49 @@ void checkCollision(){
       case down:
         if(rect.x + rect.brickWidth/2 > ball.x && ball.x > rect.x - rect.brickWidth/2 && 
            rect.y + rect.brickHeight/2 -ball.size <= ball.y - ball.size/2 && ball.y - ball.size/2 <= rect.y + rect.brickHeight/2){
-          println("rect.x:"+rect.x);
-          println("rect.y:"+rect.y);
-          println("ball.x:"+ball.x);
-          println("ball.y:"+ball.y);
+          //println("rect.x:"+rect.x);
+          //println("rect.y:"+rect.y);
+          //println("ball.x:"+ball.x);
+         // println("ball.y:"+ball.y);
           removeRect(rect);
           ball.ySpeed = ball.ySpeed * -1;
-          println("down");
+         // println("down");
         }
         break;
       case up:
         if(rect.x + rect.brickWidth/2 > ball.x && ball.x > rect.x - rect.brickWidth/2 && 
            rect.y - rect.brickHeight/2 + ball.size >= ball.y + ball.size/2 && ball.y + ball.size/2 >= rect.y - rect.brickHeight/2){
-          println("rect.x:"+rect.x);
-          println("rect.y:"+rect.y);
-          println("ball.x:"+ball.x);
-          println("ball.y:"+ball.y);
+          //println("rect.x:"+rect.x);
+          //println("rect.y:"+rect.y);
+         // println("ball.x:"+ball.x);
+          //println("ball.y:"+ball.y);
           removeRect(rect);
           ball.ySpeed = ball.ySpeed * -1;
-          println("up");
+         // println("up");
         }
         break;
       case left:
         if(rect.x + rect.brickWidth/2  >= ball.x + ball.size/2 && ball.x + ball.size/2 >= rect.x - rect.brickWidth/2 && 
            rect.y + rect.brickHeight/2 >= ball.y && ball.y >= rect.y - rect.brickHeight/2){
-          println("rect.x:"+rect.x);
-          println("rect.y:"+rect.y);
-          println("ball.x:"+ball.x);
-          println("ball.y:"+ball.y);           
+          //println("rect.x:"+rect.x);
+         // println("rect.y:"+rect.y);
+         // println("ball.x:"+ball.x);
+         // println("ball.y:"+ball.y);           
            removeRect(rect);
            ball.xSpeed = ball.xSpeed * -1;
-           println("left");
+          /// println("left");
         }
         break;
       case right:
         if(rect.x - rect.brickWidth/2 <= ball.x - ball.size/2 && ball.x - ball.size/2 <= rect.x + rect.brickWidth/2 && 
            rect.y + rect.brickHeight/2 >= ball.y && ball.y >= rect.y - rect.brickHeight/2){
-          println("rect.x:"+rect.x);
-          println("rect.y:"+rect.y);
-          println("ball.x:"+ball.x);
-          println("ball.y:"+ball.y);           
+         // println("rect.x:"+rect.x);
+          //println("rect.y:"+rect.y);
+         // println("ball.x:"+ball.x);
+          //println("ball.y:"+ball.y);           
            removeRect(rect);
            ball.xSpeed = ball.xSpeed * -1;
-           println("right");
+           //println("right");
         }
         break;
     }
@@ -269,7 +269,7 @@ void removeRect(Rect obj) {
   point++;
   if(obj.blue == true){
     bar.Length = bar.Length*2;
-    println(obj.blue);
+   // println(obj.blue);
   }
   if(obj.red == true){
     bar.Length = bar.Length * 1/2;
