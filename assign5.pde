@@ -348,6 +348,8 @@ void reset() {
 
   point = 0;
   bumpCount = 0;
+  ball.x = mouseX;
+  ball.y = height - 26;
 
   /*--------Init Variable Here---------*/
   life = 3;
