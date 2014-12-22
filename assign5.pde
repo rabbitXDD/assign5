@@ -40,7 +40,7 @@ final int win = 7;
 final int lose = 8;
 
 void setup() {
-  status = GAME_PLAYING;
+  status = GAME_START;
   size(640,480);
   smooth();
   ellipseMode(CENTER);
